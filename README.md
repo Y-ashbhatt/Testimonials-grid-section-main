@@ -1,6 +1,6 @@
 # Frontend Mentor - Testimonials grid section solution
 
-This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -23,17 +23,15 @@ Users should be able to:
 ### Screenshot
 
 Desktop
-![](./screenshot.jpg)
+![](./screenshots/Desk.png)
 
 Mobile
-![](./screenshot.jpg)
-
-
+![](./screenshots/mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://github.com/Y-ashbhatt/Testimonials-grid-section-main)
+- Live Site URL: [Live site URL here](https://y-ashbhatt.github.io/Testimonials-grid-section-main/)
 
 ## My process
 
@@ -45,7 +43,7 @@ Mobile
 - CSS Grid
 - Mobile-first workflow
 
-
 ## Author
 
-
+- Frontend Mentor - [@Y-ashbhatt](https://www.frontendmentor.io/profile/Y-ashbhatt)
+- Twitter - [@yash_bhatt01](https://x.com/yash_bhatt01)
