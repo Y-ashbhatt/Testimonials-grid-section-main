@@ -117,24 +117,24 @@ body {
   line-height: 1.4rem;
 }
 
+@media screen and (max-width: 1200px) {
+    .container {
+      margin-top: 6rem;
+    }
+    .--jonathan,
+    .--jeanette {
+      grid-column: span 2;
+    }
+    .--kira {
+      grid-row: span 1;
+      grid-column: span 4;
+    }
+  }
+  
+
 @media screen and (max-width: 750px) {
   .testimonial {
     grid-column: span 4;
     grid-row: span 1;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .testimonial {
-    margin-top: 6rem;
-  }
-
-  .--jonathan,
-  .--jeanette {
-    grid-column: span 2;
-  }
-  .--kira {
-    grid-row: span 1;
-    grid-column: span 4;
   }
 }
