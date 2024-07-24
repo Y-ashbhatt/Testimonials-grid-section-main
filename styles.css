@@ -6,11 +6,8 @@
   --Very-dark-blackish-blue: hsl(219, 29%, 14%);
   --White: hsl(0, 0%, 100%);
   --Light-gray: hsl(0, 0%, 81%);
-  --Light-gray-sub-heading: hsla(0, 0%, 81%, 0.5);
-  --Light-gray-para: hsla(0, 0%, 81%, 0.7);
   --Light-grayish-blue: hsl(210, 46%, 95%);
   --body-font: "Barlow Semi Condensed", sans-serif;
-
 }
 
 *,
@@ -25,52 +22,119 @@ html {
   font-size: 13px;
 }
 
-body{
-    min-height: 100svh;
-    background-color: var(--Light-grayish-blue);
-    display: grid;
-    place-content: center;
-    font-family: var(--body-font);
+body {
+  min-height: 100svh;
+  background-color: var(--Light-grayish-blue);
+  display: grid;
+  place-content: center;
+  font-family: var(--body-font);
 }
 
-
-.container{
-    display: grid;
-    place-content: center;
-    grid-template-columns: repeat(4,1fr);
-    gap: 2rem;
-    max-width: 77%;
-    margin: 0 auto;
+.container {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 77%;
+  margin: 0 auto;
 }
 
-.testimonial{
-    padding: 2rem;
-    border-radius: 0.75rem;
+.testimonial {
+  padding: 2rem 2.25rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.--daniel{
+.--daniel {
+  grid-column: span 2;
+  background-color: var(--Moderate-violet);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 18%;
+  color: var(--White);
+  font-weight: 500;
+  img {
+    border: solid 2px #ffffff80;
+  }
+}
+
+.--jonathan {
+  background-color: var(--Very-dark-grayish-blue);
+  color: var(--White);
+  font-weight: 500;
+}
+
+.--kira {
+  grid-row: span 2;
+  background-color: var(--White);
+  color: var(--Very-dark-blackish-blue);
+}
+
+.--jeanette {
+  background-color: var(--White);
+  color: var(--Very-dark-blackish-blue);
+}
+
+.--patrick {
+  background-color: var(--Very-dark-blackish-blue);
+  grid-column: span 2;
+
+  color: var(--White);
+  font-weight: 500;
+  img {
+    border: 2px solid var(--Moderate-violet);
+  }
+}
+
+.author {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.author img {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.role {
+  opacity: 50%;
+  font-size: 11px;
+}
+
+.heading {
+  font-size: 1.5rem;
+  word-spacing: 1.7px;
+}
+
+.comment {
+  opacity: 70%;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-top: 0.4rem;
+  line-height: 1.4rem;
+}
+
+@media screen and (max-width: 750px) {
+  .testimonial {
+    grid-column: span 4;
+    grid-row: span 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .testimonial {
+    margin-top: 6rem;
+  }
+
+  .--jonathan,
+  .--jeanette {
     grid-column: span 2;
-    background-color: var(--Moderate-violet);
-    background-image: url(./images/bg-pattern-quotation.svg);
-    background-repeat: no-repeat;
-    background-position: top right 18%;
-}
-
-.--jonathan{
-    background-color: var(--Very-dark-grayish-blue);
-}
-
-.--kira{
-    grid-row: span 2;
-    background-color: var(--White);
-
-}
-
-.--jeanette{
-    background-color: var(--White);
-}
-
-.--patrick{
-    background-color: var(--Very-dark-blackish-blue);
-    grid-column: span 2;
+  }
+  .--kira {
+    grid-row: span 1;
+    grid-column: span 4;
+  }
 }
